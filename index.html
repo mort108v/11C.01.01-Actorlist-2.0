@@ -16,21 +16,35 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">Home</a></li>
+                    <a href="index.html" class="filter active" data-info="home">Home</a></li>
                 <li>
-                    <a href="#movies">Movies</a></li>
+                    <a href="#movies" class="filter" data-info="movie">Movies</a></li>
                 <li>
-                    <a href="#actors">Actors</a></li>
+                    <a href="#actors" class="filter" data-info="fullname">Actors</a></li>
                 <li>
                     <a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section id="movies" class="">
+            <h2></h2>
+            <div class="list">
+                <!-- Insert JSON Movie output here -->
+
+            </div>
+        </section>
+        <section id="actors">
+            <h2></h2>
+            <div class="list">
+                <!-- Insert JSON Actors output here -->
+
+            </div>
+        </section>
         <!-- popup -->
         <section id="popup">
             <article>
-                <div id="luk">
+                <div id="close">
                     <button><p> x </p></button>
                 </div>
                 <div class="actor_name">
@@ -40,19 +54,19 @@
                     <div class="actor-image">
                         <img src="" alt="">
                     </div>
-                    <p><span class="description"></span></p>
+                    <p><span class="in-movie"></span></p>
                 </div>
             </article>
         </section>
 
         <!-- TEMPLATE -->
         <template>
-        <article id="full-list-view">
+        <article id="list-view">
             <div class="template-h2">
             <h2></h2>
         </div>
             <div class="template-h3">
-            <h3></h3>
+            <h3 class="in-movie"></h3>
         </div>
         
         <div class="">
@@ -63,5 +77,6 @@
     </main>
     <footer></footer>
 </body>
+<script src="script.js"></script>
 
 </html>
