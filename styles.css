@@ -27,13 +27,25 @@ figure {
 h1 {
     text-align: center;
     color: whitesmoke;
+    padding: 15px 0 15px 0;
+}
+
+h2 {
+    text-align: center;
+    color: whitesmoke;
+    padding: 15px 0 15px 0;
+}
+
+h3 {
+    text-align: center;
+    color: whitesmoke;
 }
 
 ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hotpink;
+    background-color: rgb(163, 33, 180);
     max-width: 80vw;
     margin: 0 auto;
 }
@@ -58,13 +70,13 @@ li:last-child {
 }
 
 li a {
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
 }
 
 li a:hover {
-    color: greenyellow;
-    text-decoration: none;
+    background-color: rgb(98, 13, 109);
+    padding: 5px 50px;
 }
 
 #popup {
@@ -75,6 +87,8 @@ li a:hover {
     display: none;
 }
 
+#main {}
+
 #movies {
     display: block;
 }
@@ -84,14 +98,15 @@ li a:hover {
 }
 
 .active {
-    background-color: lightgreen;
+    background-color: rgb(98, 13, 109);
     padding: 5px 50px;
 }
 
 .list {
+    max-width: 80vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 20px;
+    margin: 0 auto;
     grid-row-gap: 10px;
     grid-column-gap: 25px;
 }
@@ -104,7 +119,7 @@ article {
 
 article:hover {
     border: 1px solid black;
-    background-color: greenyellow;
+    background-color: rgb(163, 33, 180);
 }
 
 #popup {
@@ -123,10 +138,21 @@ article:hover {
     margin: 4rem auto;
     border-radius: 4px;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgb(163, 33, 180);
+    ;
     position: relative;
 }
 
-#luk {
+#close {
     text-align: right;
+}
+
+#close p {
+    padding: 1px 4px;
+    font-size: 1.2rem;
+    color: rgb(163, 33, 180);
+}
+
+.template-h3 {
+    display: none;
 }

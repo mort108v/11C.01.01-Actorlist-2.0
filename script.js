@@ -31,7 +31,7 @@
               console.log(filter);
 
               const clone = temp.cloneNode(true).content;
-              clone.querySelector("h2").textContent = actor.fullname;
+              clone.querySelector("h3").textContent = actor.fullname;
               clone.querySelector(".in-movie").textContent = actor.movie;
 
               clone.querySelector("article").addEventListener("click", () => showPopUp(actor));
@@ -50,7 +50,7 @@
       console.log(actor);
 
       popup.style.display = "block";
-      popup.querySelector("h2").textContent = actor.fullname;
+      popup.querySelector("h3").textContent = actor.fullname;
       popup.querySelector(".in-movie").textContent = actor.movie;
   }
 
