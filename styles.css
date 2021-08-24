@@ -66,3 +66,11 @@ li a:hover {
     color: greenyellow;
     text-decoration: none;
 }
+
+#popup {
+    display: none;
+}
+
+#template {
+    display: none;
+}
